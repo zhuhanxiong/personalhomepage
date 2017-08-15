@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
+    <title>个人主页</title>
+    <link rel="icon" href="img/title.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/slicebox.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.slicebox.min.js"></script>
+</head>
+
+    <style>
+        nav{
+            width: 100%;
+            position: fixed;
+            top:0;
+            left: 0;
+            background: rgba(17, 17, 17, 0.5);
+            z-index: 9;
+            padding: 10px 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+    #menu {
+
+    float: right;
+
+
+        padding: 0;
+
+        list-style-type: none;
+        z-index: 70;}
+    #menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+    #menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+    #menu .active a { color: #fff; background-color: #333;}
+    .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+        .jinying{
+            float: right;
+            padding: 10px 20px;
+            font-size: 14px;
+            background: #ffffff;
+            margin-right: 200px;
+            cursor: pointer;
+        }
+</style>
+
+<body>
+<nav>
+    <div style="margin-left: 100px;color: #ffffff;font-size: 30px;float: left">朱汉雄的主页</div>
+    <div class="jinying">静音</div>
+    <ul id="menu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+    <li data-menuanchor="page2"><a href="#page2">技能</a></li>
+    <li data-menuanchor="page3"><a href="#page3">作品</a></li>
+    <li data-menuanchor="page4"><a href="#page4">联系方式</a></li>
+
+</ul>
+
+</nav>
+
+<div id="bigbox">
+
+    <div class="section">
+        <div id="baoshipin"><p>
+            <span class="first" style="position: fixed;left:-300px">走上程序道路的人</span>
+            <br>
+            <span class="second" style="position: fixed;right:-300px">眼里总有别人看不到的世界</span>
+        </p></div>
+        <video data-autoplay loop id="myVideo" width="100%" height="100%">
+            <source src="mp4/xingxing.mp4" type="video/mp4">
+
+        </video>
+    </div>
+    <div class="section skillsBOX" >
+        <div class="skills">
+            <div class="head">掌握技能</div>
+            <div class="english">Mastery skills</div>
+            <div class="blue"></div>
+            <div class="content">
+                <ul>
+                    <li class="kuaier">
+                    </li>
+
+                    <li class="left">
+                      <div class="item">
+
+                          <div class="word">React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架都不满意，就决定自己写一套，用来架设 Instagram 的网站。做出来以后，发现这套东西很好用，就在2013年5月开源了。</div>
+                          <div><span class="react">react</span></div>
+                        </div>
+                        <div class="item">
+
+                            <div>Vue.js是一套构建用户界面的渐进式框架。与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。</div>
+                            <div><span>vue</span></div>
+                        </div>
+                        <div class="item">
+
+                            <div>Node.js®是一个基于Chrome V8 JavaScript引擎构建的JavaScript运行时。Node.js使用事件驱动的非阻塞I / O模型，使其轻便且高效。Node.js的包生态系统，npm，是世界上最大的开源图书馆生态系统。</div>
+                            <div><span class="node">node</span></div>
+                        </div>
+
+                    </li>
+                    <li class="xian">
+                        <img src="img/xian.png" alt="">
+                    </li>
+                    <li class="you">
+
+                        <div class="item1">
+                            <div><span>php</span></div>
+                            <div>PHP是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。</div>
+
+                        </div>
+                        <div class="item1">
+                            <div><span class="webpack">webpack</span></div>
+                            <div>webpack 是一个现代 JavaScript 应用程序的模块打包器。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图，其中包含应用程序需要的每个模块。</div>
+
+                        </div>
+                        <div class="item1">
+                            <div><span>jq</span></div>
+                            <div>jQuery是一个快速，小巧，功能丰富的JavaScript库。通过使用多种浏览器的易于使用的API，可以使HTML文档遍历和操作，事件处理，动画和Ajax更简单。通过多功能性和可扩展性的结合，jQuery改变了数百万人编写JavaScript的方式。</div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="section works">
+        <div class="skills">
+            <div class="workshead">作品</div>
+            <div class="english">Works</div>
+
+            <div class="content" style="width:60%;margin-top: 10px;border-bottom: 1px solid #ffffff">
+                <div class="blue" STYLE="margin: 0 auto"></div>
+
+            </div>
+        </div>
+      <div class="baina" style="position:relative;margin-top: 10px">
+          <div class="wrapper" style="top: 20px;">
+
+              <ul id="sb-slider" class="sb-slider">
+                  <li class="aa">
+                      <a href="http://wxfktv.duapp.com" target="_blank">
+                          <img src="img/ktv.jpeg" alt="img1"/></a>
+                      <div class="sb-description">
+                          <h3>同一首歌KTVAPP</h3>
+                      </div>
+                  </li>
+                  <li class="aa">
+                      <a href="http://longmaozhibo.duapp.com/" target="_blank"><img src="img/pexels-photo-374703.jpeg" alt="img2"/></a>
+                      <div class="sb-description">
+                          <h3>龙猫直播APP</h3>
+                      </div>
+                  </li>
+                  <li class="aa">
+                      <a href="http://nodetoutiao.duapp.com" target="_blank"><img src="img/pexels-photo-242492.jpeg" alt="img1" /></a>
+                      <div class="sb-description">
+                          <h3>悦闻APP</h3>
+                      </div>
+                  </li>
+                  <li class="aa">
+                      <a href="http://toseemovie.duapp.com" target="_blank"><img src="img/pexels-photo-274937.jpeg" alt="img1" /></a>
+                      <div class="sb-description">
+                          <h3>脸脸电影</h3>
+                      </div>
+                  </li>
+
+              </ul>
+
+              <div id="shadow" class="shadow"></div>
+              <div id="nav-dots" class="nav-dots" style="">
+                  <span class="nav-dot-current"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+
+          </div>
+      </div>
+    </div>
+    <div class="section contact" style="background-image:url('img/bg5.jpg');">
+        <div class="skills">
+            <div class="contacthead" >联系我</div>
+            <div class="english">Contact me</div>
+
+            <div class="content" style="width:60%;margin-top: 10px;border-bottom: 1px solid #ffffff">
+                <div class="blue" STYLE="margin: 0 auto"></div>
+
+            </div>
+        </div>
+        <ul class="message">
+            <li class="dianhua">
+                <img src="img/link2.png" alt="">
+                <span>18735555704</span>
+            </li>
+            <li class="youxiang">
+                <img src="img/link3.png" alt="">
+                <span style="fontSize:18px ">zhu18735555704@sina.com</span>
+            </li>
+            <li class="dizhi">
+                <img src="img/link4.png" alt="">
+                <span>陕西-西安</span>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+    </div>
+</div>
+</div>
+      </div>
+    </div>
+
+    
+</div>
+</body>
+</html>
